@@ -1,0 +1,10 @@
+To build "libopvpnull.so", type the following commands.
+  $ ./autogen.sh --prefix=/usr
+  $ make
+  $ su
+  # make install
+
+If you want to build this driver with the verbose mode that
+the driver shows all parameters of each function call,
+define "DEBUG_PRINT" in the "Makefile.am".
+

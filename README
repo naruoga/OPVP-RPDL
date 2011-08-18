@@ -1,0 +1,20 @@
+libopvpnull.so.* - opvp null driver.
+
+To test this driver,
+0) Install the driver.
+   To know how to build this driver, see the INSTALL file.
+
+1) Check if Ghostscript has the "opvp" driver.
+   "http://opfc.sourceforge.jp/install.html.en" will help you
+   to understand how to check and install it.
+
+2) Prepare an example data to test the driver. If you have a
+   PostScript data "example.ps", start the driver test as
+   following.
+ $ test/gstest.sh example.ps
+   This script forks Ghostscript, and Ghostscript loads the
+   "libopvpnull.so" driver, and render the data you gave.
+
+   Instead of PostScript file, you can use any example file
+   that Ghostscript handles, such as PDF.
+
