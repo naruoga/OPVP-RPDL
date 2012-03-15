@@ -1,4 +1,9 @@
-libopvpnull.so.* - opvp null driver.
+libopvprpdlpso.* - RPDL driver based on OPVP interface
+
+This project will implement OPVP[1] interface with porting
+from Ricoh Ghostscript fork[2].
+
+NOTE: this project is just started, have no function yet.
 
 To test this driver,
 0) Install the driver.
@@ -13,8 +18,11 @@ To test this driver,
    following.
  $ test/gstest.sh example.ps
    This script forks Ghostscript, and Ghostscript loads the
-   "libopvpnull.so" driver, and render the data you gave.
+   "libopvprpdl" driver, and render the data you gave.
 
    Instead of PostScript file, you can use any example file
    that Ghostscript handles, such as PDF.
 
+[1] ftp://ftp.pwg.org/pub/pwg/fsg/vector/pdapi-spec-1.0rc5.pdf
+    (currently work in progress)
+[2] http://www.ricoh.co.jp/dspinfo/orca/obj/cnt_gs_v871.html
