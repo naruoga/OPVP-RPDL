@@ -2,7 +2,7 @@
 # Run this to generate all the initial makefiles, etc.
 
 srcdir=`dirname $0`
-PKG_NAME="opvpnull"
+PKG_NAME="opvprpdl"
 
 DIE=0
 
